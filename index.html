@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- font awsame -->
     <script
       src="https://kit.fontawesome.com/7143d5871e.js"
@@ -119,7 +124,7 @@
               Creamer could be replaced <br />
               by fresh milk
             </p>
-          </div>   
+          </div>
 
           <div
             class="rounded-2xl overflow-hidden py-10 bg-gradient-to-b from-[#f4f4f4] to-[#f4f4f400] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
@@ -145,24 +150,79 @@
         </div>
       </section>
 
-      <section class="mb-24">
-        <div class="grid grid-cols-1 lg:grid-cols-2">
-          <!-- img section -->
-          <div>
+      <section class="mb-24 px-4 md:px-8 lg:px-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <!-- Image Grid Section with animation -->
+          <div
+            class="grid grid-cols-2 grid-rows-3 gap-4 animate__animated animate__fadeInLeft"
+          >
+            <div
+              class="h-auto bg-gradient-to-r from-red-100 to-red-50 rounded-lg shadow-md "
+            ></div>
 
+            <div
+              class="bg-[rgba(230,166,35,0.1)] rounded-lg row-span-2 flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                class="p-4 w-full max-w-[90%]"
+                src="./images/fresh-1.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="bg-stone-200 rounded-lg row-span-2 flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                class="p-4 w-full max-w-[90%]"
+                src="./images/fresh-2.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="h-auto bg-gradient-to-r from-stone-200 to-stone-100 rounded-lg shadow-md"
+            ></div>
           </div>
-          <!-- text section -->
-          <div>
-            <h1 class="text-4xl font-bold mb-4">Great Tea, Freshly Presented</h1>
-            <p class="text-gray-500">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
-            <br>
-            <h1 class="text-2xl font-bold mb-4 ">Unique Taste</h1>
-            <p class="text-gray-500">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
-            <br>
-            <h1 class="text-2xl font-bold">Premium Quality</h1>
-            <p class="text-gray-500">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+
+          <!-- Text Section with scroll fade effect -->
+          <div class=" space-y-6 animate__animated animate__fadeInUp">
+            <h1 class="text-3xl md:text-4xl font-bold">
+              Great Tea, Freshly Presented
+            </h1>
+            <p class="text-gray-500">
+              The meaning of gong cha in Chinese is to provide the best tea to
+              emperor from all possessions. It represents the highest quality
+              and self-expectation. Established in 2006, Gong Cha had been
+              deeply appreciated by its customers because of good word of mouth
+              and unique customized service originated from Taiwan.
+            </p>
+
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Unique Taste</h2>
+              <p class="text-gray-500">
+                A unique and different style from other teapots gives a
+                luxurious and minimalist impression.
+              </p>
+            </div>
+
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">
+                Premium Quality
+              </h2>
+              <p class="text-gray-500">
+                Premium quality that makes tea more elegant and more durable
+                when you use it.
+              </p>
+            </div>
+
+            <!-- Optional CTA Button -->
+            <button
+              class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
+            >
+              Explore More
+            </button>
           </div>
-          
         </div>
       </section>
     </main>
